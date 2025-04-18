@@ -4,11 +4,14 @@
     <title>
         Intro Page 
     </title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
-            background-color: lavender;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
         }
@@ -79,6 +82,7 @@
             list-style:circle;
             
             text-align: center;
+            text-overflow: clip;
         }
 
         .fun-facts li:nth-child(1) {
@@ -110,6 +114,47 @@
             width: 60%;
             margin-top: 20px;
         }
+        
+        .custom-font {
+        font-family: 'Dancing Script', cursive;
+        font-size:xx-large;
+        }
+    footer{
+        background-color:grey;
+        font-size: x-large;
+        color: white;
+        text-align: center;
+        height: 1000;
+        width: 500;
+        padding: 10px;
+    }
+    .about-me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 30px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.about-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    max-width: 500px;
+    text-align: left;
+}
+
 
 
     </style>
@@ -128,6 +173,8 @@
         <a href="https://in.pinterest.com/search/pins/?q=reading%20novels&rs=typed" >Reading Novels</a><br>
         <a href="https://in.pinterest.com/search/pins/?q=coding%20girl&rs=ac&len=11&source_id=ac_gnAoI69Q&eq=coding%20gir%3B&etslf=8562" >Coding</a><br>
         <a href="https://in.pinterest.com/search/pins/?q=painting&rs=typed" >Painting</a><br>
+        
+
         
     </div>
 
@@ -155,17 +202,17 @@
         <li><a href="https://i.pinimg.com/736x/3d/d0/92/3dd0925c9d2c906f2a50b5528314542f.jpg" target="_blank">Cakes</a></li>
         <li><a href="https://i.pinimg.com/736x/6d/18/3f/6d183fa46ad34df2f70ddcbabd8c9035.jpg" target="_blank">Ice Cream</a></li>
         <li><a href="https://i.pinimg.com/736x/98/7e/42/987e42caf6f3f7e8f38ed3aa8186bb12.jpg" target="_blank">Pizza</a></li>
+        
+    
     </ol>
 
     <hr>
 
-
-    </div>
-
     <h2><u>Contact Info</u></h2>
+    
     <div class="contact">
-        <a href="2024.sanchitas@isu.ac.in">Email Me</a>
-        <a href="tel:+918767812213">Call Me</a>
+        <a href="2024.sanchitas@isu.ac.in">Email</a>
+        <a href="tel:+918767812213">Phone Number</a>
     </div>
 
     <hr>
@@ -196,11 +243,59 @@
 <hr>
 
 
-    <h2><u>Audio Playlist</u></h2>
+    <h2><u> Audio </u></h2>
     <audio controls>
         <source src="Kasoor-Acoustic.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
+
+<hr>
+
+    <h2><i><u>Social Media Links</u></i></h2>
+    <a href="https://www.instagram.com/__sanchitaa10/" >Instagram </a>
+
+    <a href="https://www.snapchat.com/add/sanchitaaa_a?share_id=p2kk5ntCk7o&locale=en-GB" >Snapchat</a>
+
+    <a href="https://www.linkedin.com/in/sanchita-suryavanshi-247385320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" >LinkedIn</a>
+
+<hr>
+
+<h2><u>Favorite Quote</u></h2>
+<p><strong>If everything was perfect, you would never learn and you would never grow.</strong></p>
+
+<hr>
+
+<footer>
+    <p> &copy; 2025 Sanchita Suryawanshi </p>
+</footer>
+
+<hr>
+
+<h2><u>Image Gallery</u></h2>
+<img src="https://i.pinimg.com/736x/16/1b/a5/161ba573f403707f3b394d08a2c40da0.jpg" alt="photo1" width="200" height="300">
+<img src="https://i.pinimg.com/736x/68/57/be/6857be1f78c0183a66f66e30ef059249.jpg" alt="photo2" width="200" height="300">
+<img src="https://i.pinimg.com/736x/ae/ae/8e/aeae8ebbe73e06aacb84f8c42efe54fd.jpg" alt="photo3" width="200" height="300">
+
+<hr>
+
+<div>
+    <h2>Custom Font</h2>
+    <h3 class="custom-font">This is a Custom Font </h3>
+  </div>
+
+<hr>
+
+<h2><u>About Me</u></h2>
+<div class="about-me">
+    <img 
+        src="https://i.pinimg.com/736x/2e/7f/14/2e7f142617d0051caff99814cbe47a30.jpg" 
+        alt="Profile Picture" 
+        class="about-img"
+    >
+    <p class="about-text">
+        Hi, I'm Sanchita. I enjoy crafting user-friendly web experiences and exploring the latest tech. I'm passionate about bringing creative ideas to life through web development!
+    </p>
+</div>
 
 
 </body>
