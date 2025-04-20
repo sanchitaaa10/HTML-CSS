@@ -7,7 +7,38 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 
+    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+    <script>
+      function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+      }
+    </script>
+
+
     <style>
+
+.card-hover {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff8dc;
+  border-radius: 10px;
+  transition: 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.card-hover:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+  }
+
         body{
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
@@ -155,6 +186,45 @@
     text-align: left;
 }
 
+.carousel-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.carousel-slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 300%;
+}
+
+.carousel-slides img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255,255,255,0.7);
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1;
+}
+
+.carousel-btn.left {
+  left: 10px;
+}
+.carousel-btn.right {
+  right: 10px;
+}
 
 
     </style>
@@ -173,7 +243,7 @@
         <a href="https://in.pinterest.com/search/pins/?q=reading%20novels&rs=typed" >Reading Novels📚</a><br>
         <a href="https://in.pinterest.com/search/pins/?q=coding%20girl&rs=ac&len=11&source_id=ac_gnAoI69Q&eq=coding%20gir%3B&etslf=8562" >Coding 👩🏻‍💻</a><br>
         <a href="https://in.pinterest.com/search/pins/?q=painting&rs=typed" >Painting 🎨</a><br>
-        
+        <div class="card-hover"><a href="link">Cooking 🍳</a></div>
 
         
     </div>
@@ -275,6 +345,21 @@
 <img src="https://i.pinimg.com/736x/16/1b/a5/161ba573f403707f3b394d08a2c40da0.jpg" alt="photo1" width="200" height="300">
 <img src="https://i.pinimg.com/736x/68/57/be/6857be1f78c0183a66f66e30ef059249.jpg" alt="photo2" width="200" height="300">
 <img src="https://i.pinimg.com/736x/ae/ae/8e/aeae8ebbe73e06aacb84f8c42efe54fd.jpg" alt="photo3" width="200" height="300">
+
+<hr>
+
+<h2><u><i>Image Gallery (Carousel)</i></u></h2>
+<div class="carousel-container">
+  <button class="carousel-btn left" onclick="moveSlide(-1)">&#10094;</button>
+
+  <div class="carousel-slides">
+    <img src="https://i.pinimg.com/736x/16/1b/a5/161ba573f403707f3b394d08a2c40da0.jpg" alt="Photo 1">
+    <img src="https://i.pinimg.com/736x/68/57/be/6857be1f78c0183a66f66e30ef059249.jpg" alt="Photo 2">
+    <img src="https://i.pinimg.com/736x/ae/ae/8e/aeae8ebbe73e06aacb84f8c42efe54fd.jpg" alt="Photo 3">
+  </div>
+
+  <button class="carousel-btn right" onclick="moveSlide(1)">&#10095;</button>
+</div>
 
 <hr>
 
