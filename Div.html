@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Div Practice Playground</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #000000;
+    }
+    section {
+      margin-bottom: 40px;
+      background: rgb(122, 119, 119);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <section>
+    <h2>🔹 Practice 1: Basic Box</h2>
+    <div style="background-color: lightblue; padding: 20px;">
+      Hello, I am a box!
+    </div>
+  </section>
+
+  <section>
+    <h2>🔹 Practice 2: Two Boxes Side by Side</h2>
+    <div style="display: flex; gap: 10px;">
+      <div style="background: salmon; width: 30%; padding: 10px;">Left</div>
+      <div style="background: lightgreen; width: 70%; padding: 10px;">Right</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🔹 Practice 3: Center a Div</h2>
+    <div style="width: 200px; margin: 0 auto; background: #ddd; text-align: center;">
+      I’m centered!
+    </div>
+  </section>
+
+  <section>
+    <h2>🔹 Practice 4: Colored Header and Footer</h2>
+    <div style="background: navy; color: white; padding: 10px;">Header</div>
+    <div style="padding: 20px;">Main Content Here</div>
+    <div style="background: gray; color: white; padding: 10px;">Footer</div>
+  </section>
+
+  <section>
+    <h2>🔹 Practice 5: Nested Divs</h2>
+    <div style="background: lightgray; padding: 20px; border: 1px solid #aaa;">
+      Outer Div
+      <div style="background: white; padding: 10px; margin-top: 10px; border: 1px solid #ccc;">
+        Inner Div
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🔹 Practice 6: Div as Button</h2>
+    <div style="display: inline-block; background: orange; padding: 10px 20px; color: white; cursor: pointer;">
+      Click Me
+    </div>
+  </section>
+
+  <section>
+    <h2>🔹 Practice 7: Responsive Box</h2>
+    <div style="width: 100%; max-width: 500px; background: #f9f9f9; padding: 20px; margin: auto;">
+      This box adjusts its size!
+    </div>
+  </section>
+
+  <section>
+    <h2>🔹 Practice 8: Flexbox Layout with Divs</h2>
+    <div style="display: flex; justify-content: space-around; gap: 10px;">
+      <div style="background: rgb(210, 32, 62); padding: 20px;"> Eat</div>
+      <div style="background: rgb(145, 102, 186); padding: 20px;">Sleep</div>
+      <div style="background: rgb(222, 251, 5); padding: 20px;">Code</div>
+      <div style="background: rgb(5, 198, 251); padding: 20px;">Repeat</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🔹 Practice 9: Div with Border and Shadow</h2>
+    <div style="border: 2px solid #637937; padding: 20px; box-shadow: 2px 2px 10px rgba(0,0,0,0.2);">
+      Stylish Box📦
+    </div>
+  </section>
+
+  <section>
+    <h2>🔹 Practice 10: Div Card with Image and Text</h2>
+    <div style="border: 1px solid #ccc; padding: 15px; width: 250px;">
+      <img src="https://media-bom2-2.cdn.whatsapp.net/v/t61.24694-24/491840340_1435220017857900_6000680555644687982_n.jpg?ccb=11-4&oh=01_Q5Aa1QHyeXpxiLMlw3ZrZRLxHZC6AnDTzTOq6803W1ZD5iShQQ&oe=6814D6F6&_nc_sid=5e03e0&_nc_cat=100" style="width: 100%;" style="width: 100%;">
+      <h3>Sanchita Suryawanshi</h3>
+      <p>Web Devloper</p>
+      <button style="padding: 5px 10px;">Follow Me</button>
+    </div>
+  </section>
+
+  <section>
+    <h2>🌀 Practice 11: Gradient Background Div</h2>
+    <div style="padding: 30px; background: linear-gradient(to right, rgb(224, 85, 4), #000000); color: white;">
+      JAI SHIVRAI🧡
+    </div>
+  </section>
+
+  <section>
+    <h2>🔳 Practice 12: Div with a Hover Effect</h2>
+    <div style="width: 200px; height: 100px; background: rgb(255, 255, 255); transition: 0.3s;"
+         onmouseover="this.style.background='red'; this.style.transform='scale(1.1)'"
+         onmouseout="this.style.background='yellow'; this.style.transform='scale(1)'">
+      Hover over me!
+    </div>
+  </section>
+
+  <section>
+    <h2>📝 Practice 13: Sticky Note</h2>
+    <div style="background: #ffff88; padding: 20px; width: 200px; font-family: cursive; box-shadow: 5px 5px 10px #ccc; transform: rotate(-2deg); border: 1px solid #aaa;">
+      Don’t forget to love yourself FIRST 🫶🏻
+    </div>
+  </section>
+
+  <section>
+    <h2>🧊 Practice 14: Glassmorphism Effect</h2>
+    <div style="background: rgba(23, 19, 19, 0.2); backdrop-filter: blur(8px); padding: 20px; border-radius: 10px; color: rgb(0, 0, 0); border: 1px solid rgba(255, 255, 255, 0.3); width: 300px;">
+      Glass-like div effect!
+    </div>
+  </section>
+
+  <section>
+    <h2>🪄 Practice 15: Collapsible Div</h2>
+    <div onclick="toggleDiv()" style="cursor: pointer; background: rgb(0, 0, 0); padding: 10px; color: rgb(255, 255, 255);">
+      Click to show/hide🤫 !!!
+    </div>
+    <div id="hidden" style="display: none; padding: 10px; background:cornflowerblue;">
+      🎉 Surprise! You Are The Most Beautiful Here 🥰
+    </div>
+    <script>
+      function toggleDiv() {
+        const el = document.getElementById('hidden');
+        el.style.display = el.style.display === 'none' ? 'block' : 'none';
+      }
+    </script>
+  </section>
+
+  <section>
+    <h2>🗃️ Practice 16: Responsive Grid</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); gap: 10px;">
+      <div style="background: lavender; padding: 20px;">1 Guten Morgen</div>
+      <div style="background: lavender; padding: 20px;">2  Guten Tag</div>
+      <div style="background: lavender; padding: 20px;">3  Guten Abend</div>
+      <div style="background: lavender; padding: 20px;">4  Gute Nacht</div>
+      
+    </div>
+  </section>
+
+  <section>
+    <h2>🎨 Practice 17: Color Palette</h2>
+    <div style="display: flex; gap: 5px;">
+      <div style="width: 100px; height: 100px; background: #ff0000;"></div>
+      <div style="width: 100px; height: 100px; background: #ffae00;"></div>
+      <div style="width: 100px; height: 100px; background: #0d00ff;"></div>
+      <div style="width: 100px; height:100px; background: #00ff1a;"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🪧 Practice 18: Badge/Label</h2>
+    <div style="display: inline-block; background: crimson; color: white; padding: 5px 10px; border-radius: 50px;">
+      $10000
+    </div>
+  </section>
+
+  <section>
+    <h2>📱 Practice 19: Notification Card</h2>
+    <div style="max-width: 300px; padding: 15px; background: #fff3cd; border: 1px solid #ffeeba; border-radius: 10px;">
+      <strong>⚠️ Alert:</strong> Your electric bill is due TOMORROW!!
+    </div>
+  </section>
+
+  <section>
+    <h2>💬 Practice 20: Chat Bubble</h2>
+    <div style="max-width: 250px; background: #e0f7fa; padding: 10px 15px; border-radius: 20px; margin: 10px 0;">
+      Heyy!! whatsup !? 🤓
+    </div>
+  </section>
+
+</body>
+</html>
