@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Collecting Random Items</title>
+
+<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #1e1e1e;
+  color: #000;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  background: #f6f6f6;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 900px;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.grid-section .grid,
+.masonry {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card img {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 0.5rem;
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+  </style>
+</head>
+<body>
+    <div class="container">
+      <h1>Collecting Random Items</h1>
+      <p class="subtitle">Discover random items we are collecting today. Who knows what we might find?</p>
+  
+      <div class="grid-section">
+        <div class="grid">
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/15/26/33/152633aa7a8d2998601963a2c3d45a58.jpg" alt="Socks" />
+            <h3>Socks</h3>
+            <p>Where do they vanish after laundry day?</p>
+          </div>
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/d0/cc/7c/d0cc7c2ca7702e1a75fa7bb3c978f58d.jpg" alt="Coffee" />
+            <h3>Coffee Cups</h3>
+            <p>Evidence of every caffeine-fueled thought.</p>
+          </div>
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/d3/da/e6/d3dae6377216f15bd7388b9e95e4a02a.jpg" alt="Pizza" />
+            <h3>Pizza Boxes</h3>
+            <p>Every box tells a story of midnight cravings.</p>
+          </div>
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/a2/54/ab/a254ab3176f62d952a39db1c7a2a6a2b.jpg" alt="Cookies" />
+            <h3>Cookies</h3>
+            <p>Baked to perfection, gone in seconds.</p>
+          </div>
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/f5/ba/8f/f5ba8f283bf569aa889bd4add026aa96.jpg" alt="Toys" />
+            <h3>Toys</h3>
+            <p>Relics of childhood and forgotten playtimes.</p>
+          </div>
+          <div class="card">
+            <img src="https://i.pinimg.com/736x/37/c2/0d/37c20db23af7e0bf90860757299a2211.jpg" alt="Plants" />
+            <h3>Plants</h3>
+            <p>Green companions thriving on sunlight and love.</p>
+          </div>
+        </div>
+      </div>
+  
+      <h2>Masonry Layout Mode!</h2>
+      <div class="masonry">
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/eb/b3/5d/ebb35d9572ffff815578498fcf59cbbb.jpg" alt="Laptop" />
+          <h3>Laptops</h3>
+          <p>Your loyal workstation, entertainment hub, and midnight confidant.</p>
+        </div>
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/68/3e/d0/683ed03c04dba3916b39c1408e5d2d8b.jpg" alt="Phone" />
+          <h3>Phones</h3>
+          <p>Always by your side, even when you're trying to disconnect.</p>
+        </div>
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/7e/84/f8/7e84f81cbee05ed2bd4f656c7b6ac9c2.jpg" alt="Toothbrush" />
+          <h3>Toothbrushes</h3>
+          <p>The quiet guardian of your daily hygiene rituals.</p>
+        </div>
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/88/3d/8a/883d8acb789ea481af8b8f004884db5c.jpg" alt="Books" />
+          <h3>Books</h3>
+          <p>Portals to new worlds sitting quietly on your shelf.</p>
+        </div>
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/a2/43/cc/a243ccbbeaf7bbc77e58291b0a1e4f2b.jpg" alt="Shoes" />
+          <h3>Shoes</h3>
+          <p>They’ve been everywhere you’ve walked—and some places you haven’t.</p>
+        </div>
+        <div class="card">
+          <img src="https://i.pinimg.com/736x/08/5d/fc/085dfcde105e9a3acf8450c98eefe85c.jpg" alt="Hat" />
+          <h3>Hats</h3>
+          <p>Fashion or function? Maybe both. Maybe neither.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>  

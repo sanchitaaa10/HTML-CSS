@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Logos Hover Effect</title>
+  <style>
+
+ body {
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: sans-serif;
+}
+
+.logo-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 120px;
+  height: auto;
+  filter: grayscale(100%);
+  transition: filter 0.4s ease-in-out, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.logo:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+}
+
+  </style>
+</head>
+
+<body>
+    
+  <div class="logo-container">
+   
+    <img src="https://i.pinimg.com/736x/ca/e1/b4/cae1b4f6b223fe5a7bb712b680cffa67.jpg" alt="Brand1" class="logo" />
+    <img src="https://i.pinimg.com/736x/62/1f/21/621f21fa891b48023ff7c4dff12c7aa0.jpg" alt="Brand 2" class="logo" />
+    <img src="https://i.pinimg.com/736x/85/6e/45/856e4546b8c202dda03e97771f76f902.jpg" alt="Brand 3" class="logo" />
+    <img src="https://i.pinimg.com/736x/a3/e2/18/a3e21834809a55797f014498b8c345bf.jpg" alt="Brand 4" class="logo" />
+  </div>
+</body>
+</html>

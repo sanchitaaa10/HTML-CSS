@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Masking with mask-image</title>
+  <style>
+    body {
+  background: #1e1e1e;
+  color: #fff;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.masking-section {
+  background: #fff;
+  color: #000;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 900px;
+}
+
+.image-row {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.image {
+  width: 400px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.masked {
+  -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+  </style>
+</head>
+<body>
+  <div class="masking-section">
+    <h2><strong>4. Masking</strong> : You can achieve this using the <code>mask-image</code> property.</h2>
+    <div class="image-row">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Sunset_tree.png" alt="Original" class="image" />
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Sunset_tree.png" alt="Masked" class="image masked" />
+    </div>
+  </div>
+</body>
+</html>
