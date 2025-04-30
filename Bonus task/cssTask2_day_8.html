@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Day 8 CSS Task 2</title>
+
+  <style>
+    .card {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      background-color: #f4f4f4;
+    }
+    .image img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+    .info {
+      flex-grow: 1;
+    }
+    .navbar ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    list-style-type: none;
+  }
+  .navbar li {
+    margin: 10px;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  /* Responsive design for small screens */
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sidebar {
+    width: 200px;
+    padding: 20px;
+    background-color: lightgray;
+  }
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: lightblue;
+  }
+
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .sidebar {
+      width: 100%;
+    }
+    .main-content {
+      width: 100%;
+    }
+  }
+  footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-top: 500px;
+    width: 100%;
+  }
+  </style>
+
+</head>
+<body>
+  <div class="card">
+    <div class="image">
+      <img src="https://media-bom2-4.cdn.whatsapp.net/v/t61.24694-24/491840340_1435220017857900_6000680555644687982_n.jpg?ccb=11-4&oh=01_Q5Aa1QG81B1kJRbPvagRNP-pN3NFeB82VxO_raW8z-AL_8ND3A&oe=681C4F76&_nc_sid=5e03e0&_nc_cat=100" alt="Profile Image">
+    </div>
+    <div class="info">
+      <h2>Sanchita Suryawanshi</h2>
+      <p>
+        Hi, I'm Sanchita Suryawanshi, a B.Tech student specializing in Computer Science and Engineering.
+        Web Developer with a passion for coding and design.👩🏻‍💻
+      </p>
+    </div>
+  </div>
+
+  <hr>
+
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  
+  <div class="container">
+    <div class="sidebar left">Left Sidebar</div>
+    <div class="main-content">I am an enthusiastic and driven individual ✨, 
+        constantly striving to learn 📚 and grow both personally and professionally 🚀. With a passion for technology 💻 and innovation 💡, 
+        I approach challenges with a positive mindset 😊 and a determination to find creative solutions 🎯. I value hard work 💪, honesty 🤝, and continuous improvement 📈, 
+        and I believe in setting goals that push me beyond my comfort zone 🌟. Whether working independently 🧠 or collaborating with others 🤝, I am committed to giving my best effort and making a meaningful impact 🌍 
+        in everything I do. Outside of my academic and professional pursuits, I enjoy exploring new interests 🧳, 
+        meeting new people 🧑‍🤝‍🧑, and embracing new experiences 🌏 that broaden my perspective.</div>
+    <div class="sidebar right">Right Sidebar</div>
+  </div>
+  
+  <footer style="text-align: center;background-color: #ebbcf8;color: rgb(8, 7, 7);text-align: center;padding: 15px 0;position: relative;bottom: 0;width: 100%;;">
+    © 2025 Sanchita Suryawanshi</footer>
+  
+  
+</body>
+</html>
