@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shape Outside CSS Property</title>
+  <style>
+    .container {
+      width: 700px;
+      margin: 50px auto;
+      font-family: 'Georgia', serif;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .circle {
+      float: left;
+      width: 200px;
+      height: 200px;
+      background-color: crimson;
+      shape-outside: circle();
+      clip-path: circle();
+      margin-right: 20px;
+    }
+
+    .text {
+      overflow: hidden;
+    }
+
+    h1 {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="circle"></div>
+    <div class="text">
+      <h1>Shape Outside CSS Property</h1>
+      <p>
+        Morbi tincidunt lectus non feugiat tristique. In blandit ornare odio sit amet cursus. In mollis dictum mollis.
+        Suspendisse sed sagittis sem. Morbi euismod ligula id purus ornare, id gravida augue vestibulum. Class aptent
+        taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent eu consectetur neque,
+        a commodo arcu. Vivamus lorem ante, pulvinar eu cursus nec, congue ut tellus. Mauris sit amet risus auctor,
+        dignissim ligula vel, commodo purus. Ut sapien nunc, dignissim eu diam quis, tempor scelerisque leo.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

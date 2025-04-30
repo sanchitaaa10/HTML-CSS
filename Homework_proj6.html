@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scroll Snap X and Y</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: sans-serif;
+      background-color: #111;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+    }
+
+    .title {
+      margin-bottom: 10px;
+    }
+
+    .mask-container {
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+      border: 4px solid #fff;
+      border-radius: 12px;
+      position: relative;
+    }
+
+    /* Horizontal Scroll Section */
+    .scroll-x {
+      display: flex;
+      height: 100%;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .scroll-x .image-item {
+      flex: 0 0 100%;
+      scroll-snap-align: start;
+      height: 100%;
+    }
+
+    /* Vertical Scroll Section */
+    .scroll-y {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .scroll-y .image-item {
+      flex: 0 0 100%;
+      scroll-snap-align: start;
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h2 class="title">Horizontal Scroll</h2>
+  <div class="mask-container">
+    <div class="scroll-x">
+      <div class="image-item">
+        <img src="https://i.pinimg.com/736x/8a/83/74/8a8374da6e2dccb3fa5e0af4d9f2885e.jpg" alt="Image 1" />
+      </div>
+      <div class="image-item">
+        <img src="https://i.pinimg.com/736x/94/23/5c/94235ce2251220a4887658614fec96a3.jpg" alt="Image 2" />
+      </div>
+      <div class="image-item">
+        <img src="https://i.pinimg.com/736x/97/a0/d5/97a0d5b36eb15276a40947cd46a8a310.jpg" alt="Image 3" />
+      </div>
+      <div class="image-item">
+        <img src="https://i.pinimg.com/736x/94/cc/8b/94cc8baec62f4fc1166e466a294a0588.jpg" alt="Image 4" />
+      </div>
+    </div>
+  </div>
+
+  <h2 class="title">Vertical Scroll</h2>
+  <div class="mask-container">
+    <div class="scroll-y">
+      <div class="image-item">
+        <img src="https://i.pinimg.com/736x/8a/83/74/8a8374da6e2dccb3fa5e0af4d9f2885e.jpg" alt="Image 1" />
+      </div>
+      <div class="image-item">
+        <img src="https://i.pinimg.com/736x/94/23/5c/94235ce2251220a4887658614fec96a3.jpg" alt="Image 2" />
+      </div>
+      <div class="image-item">
+        <img src="https://i.pinimg.com/736x/97/a0/d5/97a0d5b36eb15276a40947cd46a8a310.jpg" alt="Image 3" />
+      </div>
+      <div class="image-item">
+        <img src="https://i.pinimg.com/736x/94/cc/8b/94cc8baec62f4fc1166e466a294a0588.jpg" alt="Image 4" />
+      </div>
+    </div>
+  </div>
+</body>
+</html>
