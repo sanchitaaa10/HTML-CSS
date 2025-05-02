@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 9 Task 1</title>
+    <style>
+        .box {
+          width: 100px;
+          height: 100px;
+          animation: colorChange 4s infinite alternate, textChange 4s infinite;
+        }
+      
+        @keyframes colorChange {
+          from { background-color: rgb(0, 255, 89); }
+          to { background-color: rgb(255, 60, 0); }
+        }
+        @keyframes textChange{
+            from { font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; }
+            to{ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+        }
+
+
+
+        .multi {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            animation: moveColor 5s forwards;
+        }
+        @keyframes moveColor {
+            0%   { left: 0; background: red; }
+            25%  { left: 50px; background: orange; }
+            50%  { left: 100px; background: yellow; }
+            75% { left: 50px; background-color: blueviolet;}
+            100% { left: 200px; background: green; }
+        }
+        
+
+        .pulse {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: blue;
+            animation: pulseAnim 1s infinite alternate;
+        }
+        @keyframes pulseAnim {
+            from { transform: scale(1); }
+            to   { transform: scale(1.2); }
+        }
+
+
+      </style>
+
+</head>
+<body>
+
+    <div class="box">
+        <p>This is a box</p>
+    </div>
+
+    <div class="multi"></div>
+
+    <div class="pulse"></div>
+
+    
+</body>
+</html>

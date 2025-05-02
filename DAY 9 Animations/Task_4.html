@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Mood Journal</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #f9f9f9;
+      padding: 40px;
+    }
+
+    .journal {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .entry {
+      position: relative;
+      background-color: #fff8dc;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .entry:nth-child(even) {
+      background-color: #e6f0ff;
+    }
+
+    .entry:hover {
+      transform: scale(1.02);
+    }
+
+    .entry::before {
+      content: "📝";
+      font-size: 28px;
+      position: absolute;
+      top: 10px;
+      left: 15px;
+    }
+
+    .entry.happy::before {
+      content: "😀";
+    }
+
+    .entry.meh::before {
+      content: "😐";
+    }
+
+    .entry.sad::before {
+      content: "😢";
+    }
+
+    .entry.happy:hover::before {
+      content: "😄";
+    }
+
+    .entry.meh:hover::before {
+      content: "🙂";
+    }
+
+    .entry.sad:hover::before {
+      content: "😭";
+    }
+
+    h2 {
+      margin-left: 40px;
+      margin-bottom: 10px;
+      font-size: 1.5em;
+      position: relative;
+    }
+
+    p::first-letter {
+      font-size: 2em;
+      font-weight: bold;
+      color: #e07a5f;
+    }
+
+    .like-button {
+      border: none;
+      background: none;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+      margin-top: 10px;
+    }
+
+    .like-button:active {
+      transform: scale(1.5);
+      color: #e25555;
+    }
+
+    .entry::after {
+      content: "✨✨✨";
+      display: block;
+      text-align: right;
+      padding-top: 10px;
+      font-size: 16px;
+      opacity: 0.4;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="text-align:center;">🌈 <u>My Mood Journal</u></h1>
+  <div class="journal">
+    
+    <div class="entry happy">
+      <h2>Feeling Great!</h2>
+      <p>Today was awesome. I finished my CSS Tasks and learned new Things in Animation</p>
+      <button class="like-button">❤️ Like</button>
+    </div>
+
+    <div class="entry meh">
+      <h2>Just Okay</h2>
+      <p>Nothing much happened today. It was kind of slow, but peaceful.</p>
+      <button class="like-button">❤️ Like</button>
+    </div>
+
+    <div class="entry sad">
+      <h2>A Bit Down</h2>
+      <p>I felt lonely today. Hoping tomorrow is better.</p>
+      <button class="like-button">❤️ Like</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
