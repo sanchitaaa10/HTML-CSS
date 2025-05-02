@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Scroll Snap Examples</title>
+  
+<style>
+    body {
+      margin: 0;
+      padding: 40px;
+      font-family: sans-serif;
+      background-color: #111;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 50px;
+    }
+
+    h2 {
+      margin: 0;
+    }
+
+    .mask-container {
+      width: 300px;
+      height: 300px;
+      overflow: hidden;
+      border: 4px solid #fff;
+      border-radius: 12px;
+      position: relative;
+    }
+
+    .scroll-x, .scroll-proximity-x {
+      display: flex;
+      height: 100%;
+      overflow-x: scroll;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .scroll-proximity-x {
+      scroll-snap-type: x proximity;
+    }
+
+    .scroll-y, .scroll-proximity-y {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .scroll-proximity-y {
+      scroll-snap-type: y proximity;
+    }
+
+    .scroll-both, .scroll-proximity-both {
+      display: grid;
+      grid-template-columns: repeat(2, 100%);
+      grid-template-rows: repeat(2, 100%);
+      width: 100%;
+      height: 100%;
+      overflow: scroll;
+      scroll-snap-type: both mandatory;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .scroll-proximity-both {
+      scroll-snap-type: both proximity;
+    }
+
+    .image-item {
+      scroll-snap-align: start;
+      width: 100%;
+      height: 100%;
+      flex: 0 0 100%;
+    }
+
+    .image-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+</style>
+</head>
+<body>
+
+    <h1><b><u>Image Scrolling</u></b></h1>
+  <h2>1. Horizontal</h2>
+  <div class="mask-container">
+    <div class="scroll-x">
+      <div class="image-item"><img src="https://i.pinimg.com/736x/8a/83/74/8a8374da6e2dccb3fa5e0af4d9f2885e.jpg" /></div>
+      <div class="image-item"><img src="https://i.pinimg.com/736x/94/23/5c/94235ce2251220a4887658614fec96a3.jpg" /></div>
+      <div class="image-item"><img src="https://i.pinimg.com/736x/97/a0/d5/97a0d5b36eb15276a40947cd46a8a310.jpg" /></div>
+      <div class="image-item"><img src="https://i.pinimg.com/736x/94/cc/8b/94cc8baec62f4fc1166e466a294a0588.jpg" /></div>
+    </div>
+  </div>
+
+  <h2>2. Vertical</h2>
+  <div class="mask-container">
+    <div class="scroll-y">
+      <div class="image-item"><img src="https://i.pinimg.com/736x/8a/83/74/8a8374da6e2dccb3fa5e0af4d9f2885e.jpg" /></div>
+      <div class="image-item"><img src="https://i.pinimg.com/736x/94/23/5c/94235ce2251220a4887658614fec96a3.jpg" /></div>
+      <div class="image-item"><img src="https://i.pinimg.com/736x/97/a0/d5/97a0d5b36eb15276a40947cd46a8a310.jpg" /></div>
+      <div class="image-item"><img src="https://i.pinimg.com/736x/94/cc/8b/94cc8baec62f4fc1166e466a294a0588.jpg" /></div>
+    </div>
+  </div>
+
+  <h2>3. Scroll Snap Both</h2>
+  <div class="mask-container">
+    <div class="scroll-both">
+      <div class="image-item"><img src="https://i.pinimg.com/736x/8a/83/74/8a8374da6e2dccb3fa5e0af4d9f2885e.jpg" /></div>
+      <div class="image-item"><img src="https://i.pinimg.com/736x/94/23/5c/94235ce2251220a4887658614fec96a3.jpg" /></div>
+      <div class="image-item"><img src="https://i.pinimg.com/736x/97/a0/d5/97a0d5b36eb15276a40947cd46a8a310.jpg" /></div>
+      <div class="image-item"><img src="https://i.pinimg.com/736x/94/cc/8b/94cc8baec62f4fc1166e466a294a0588.jpg" /></div>
+    </div>
+  </div>
+
+  <h2>4. X - proximity </h2>
+  <div class="mask-container">
+    <div class="scroll-proximity-x">
+      <div class="image-item"><img src="https://i.pinimg.com/736x/8a/83/74/8a8374da6e2dccb3fa5e0af4d9f2885e.jpg" /></div>
+      <div class="image-item"><img src="https://i.pinimg.com/736x/94/23/5c/94235ce2251220a4887658614fec96a3.jpg" /></div>
+      <div class="image-item"><img src="https://i.pinimg.com/736x/97/a0/d5/97a0d5b36eb15276a40947cd46a8a310.jpg" /></div>
+      <div class="image-item"><img src="https://i.pinimg.com/736x/94/cc/8b/94cc8baec62f4fc1166e466a294a0588.jpg" /></div>
+    </div>
+  </div>
+
+  <h2>5. Y - proximity</h2>
+  <div class="mask-container">
+    <div class="scroll-proximity-y">
+      <div class="image-item"><img src="https://i.pinimg.com/736x/8a/83/74/8a8374da6e2dccb3fa5e0af4d9f2885e.jpg" /></div>
+      <div class="image-item"><img src="https://i.pinimg.com/736x/94/23/5c/94235ce2251220a4887658614fec96a3.jpg" /></div>
+      <div class="image-item"><img src="https://i.pinimg.com/736x/97/a0/d5/97a0d5b36eb15276a40947cd46a8a310.jpg" /></div>
+      <div class="image-item"><img src="https://i.pinimg.com/736x/94/cc/8b/94cc8baec62f4fc1166e466a294a0588.jpg" /></div>
+    </div>
+  </div>
+
+  <h2>6. Both - proximity</h2>
+  <div class="mask-container">
+    <div class="scroll-proximity-both">
+      <div class="image-item"><img src="https://i.pinimg.com/736x/8a/83/74/8a8374da6e2dccb3fa5e0af4d9f2885e.jpg" /></div>
+      <div class="image-item"><img src="https://i.pinimg.com/736x/94/23/5c/94235ce2251220a4887658614fec96a3.jpg" /></div>
+      <div class="image-item"><img src="https://i.pinimg.com/736x/97/a0/d5/97a0d5b36eb15276a40947cd46a8a310.jpg" /></div>
+      <div class="image-item"><img src="https://i.pinimg.com/736x/94/cc/8b/94cc8baec62f4fc1166e466a294a0588.jpg" /></div>
+    </div>
+  </div>
+
+</body>
+</html>
