@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIBRARY CAFE</title>
+    <style>
+        body {
+            background-color: #ffe6f0; 
+            margin: 0;
+            font-family: Georgia, serif; 
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "starters mains desserts";
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #ffb6c1; 
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 32px;
+            font-weight: bold;
+            border-radius: 10px;
+            font-family: 'Georgia', serif;
+        }
+
+        .menu-section {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .starters {
+            grid-area: starters;
+        }
+
+        .mains {
+            grid-area: mains;
+        }
+
+        .desserts {
+            grid-area: desserts;
+        }
+
+        h2 {
+            color: #b35d7f;
+            font-size: 22px;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 5px 0;
+            color: #555;
+        }
+
+        @media (max-width: 600px) {
+            .menu-container {
+                grid-template-areas:
+                    "header"
+                    "starters"
+                    "mains"
+                    "desserts";
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu-container">
+        <header class="header">LIBRARY CAFE - Menu</header>
+
+        <section class="menu-section starters">
+            <h2>Hot Beverages</h2>
+            <p>Cappuccino - ₹120</p>
+            <p>Hot Chocolate - ₹100</p>
+            <p>Herbal Tea - ₹90</p>
+        </section>
+
+        <section class="menu-section mains">
+            <h2>Snacks</h2>
+            <p>Grilled Cheese Sandwich - ₹150</p>
+            <p>Veg Panini - ₹180</p>
+            <p>Cheesy Nachos - ₹160</p>
+        </section>
+
+        <section class="menu-section desserts">
+            <h2>Sweet Treats</h2>
+            <p>Red Velvet Cupcake - ₹80</p>
+            <p>Chocolate Muffin - ₹70</p>
+            <p>Strawberry Cheesecake - ₹120</p>
+        </section>
+    </div>
+</body>
+
+</html>

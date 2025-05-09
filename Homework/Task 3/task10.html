@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-10</title>
+    <style>
+        body {
+            margin: 0;
+            font-family:'Times New Roman', Times, serif;
+            background-color: #ffc9b7;
+        }
+
+        img{
+            border-radius: 100%;
+            width: 60%;
+        }
+
+        .social-container {
+            display: grid;
+            grid-template-areas:
+                "profile feed sidebar";
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 20px;
+            max-width: 1100px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile { 
+            grid-area: profile;
+            
+
+         }
+        .feed { grid-area: feed; }
+        .sidebar { grid-area: sidebar; }
+
+        h2 {
+            color: #333;
+        }
+
+        @media (max-width: 600px) {
+            .social-container {
+                grid-template-areas:
+                    "profile"
+                    "feed"
+                    "sidebar";
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="social-container">
+        <section class="section profile">
+            <h2>Profile</h2>
+            <img source src="https://media-bom2-2.cdn.whatsapp.net/v/t61.24694-24/491840340_1435220017857900_6000680555644687982_n.jpg?ccb=11-4&oh=01_Q5Aa1QF6SP7gul5nyX6JSq0hummigIoQrfVRg9Va0EW_jbcAzg&oe=682B0836&_nc_sid=5e03e0&_nc_cat=100" class="img" >
+            <p style="font-size: 20px;">
+                <b>
+                    Sanchita 🌷
+                </b>
+            </p>
+            <p>ITM Skills University'28🎓</p>
+        </section>
+        <section class="section feed">
+            <h2>News Feed</h2>
+            <p>Here will be the posts and other stuffs of the people you follow</p>
+        </section>
+        <aside class="section sidebar">
+            <h2>Sidebar</h2>
+            <p>Here will be the dm secton/ message section</p>
+        </aside>
+    </div>
+</body>
+</html>
