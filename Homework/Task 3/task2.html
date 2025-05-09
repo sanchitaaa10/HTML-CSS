@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-2</title>
+    <style>
+        body {
+            background-color: rgba(128, 128, 128, 0.76);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery {
+            display: grid;
+            gap: 10px;
+            padding: 40px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            object-fit: cover;
+            display: block;
+        }
+
+        @media (max-width: 599px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (min-width: 600px) and (max-width: 899px) {
+            .gallery {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 900px) {
+            .gallery {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery"> 
+        <img  src="https://i.pinimg.com/736x/98/25/99/9825999335233a2fdaf78fc8b0eeacac.jpg" alt="Image 1">
+        <img src="https://i.pinimg.com/736x/69/c4/30/69c43015962c8bbbc6d884be310d3ede.jpg" alt="Image 2">
+        <img style="height:15cm" src="https://i.pinimg.com/736x/aa/71/ea/aa71ea557488b77a132e611a2995239b.jpg" alt="Image 3">
+        <img style="height:16cm" src="https://i.pinimg.com/736x/da/97/5d/da975d71539c035ac0261b015228ba0d.jpg" alt="Image 4">
+        <img style="height:18cm" src="https://i.pinimg.com/736x/d2/7d/5a/d27d5a89966902257635ab1f56656651.jpg" alt="Image 5">
+        <img src="https://i.pinimg.com/736x/2d/11/72/2d117223922f73e61674a27c1b342daa.jpg" alt="Image 6">
+        <img src="https://i.pinimg.com/736x/0b/d9/1c/0bd91caf4b63923bf6473c0055247c7c.jpg" alt="Image 7">
+        <img src="https://i.pinimg.com/736x/bc/79/90/bc799097a1c43d2e86f9d781d6a69637.jpg" alt="Image 8">
+        <img src="https://i.pinimg.com/736x/3c/6e/9b/3c6e9bfb5246fb3805f30bd7f88567dd.jpg" alt="image9">
+    </div>
+</body>
+
+</html>

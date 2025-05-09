@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 4</title>
+    <style>
+        body {
+            background-color: #0e2f2f; 
+            margin: 0;
+            font-family: 'Georgia', serif;
+            color: #d4af37; 
+        }
+
+        .product-grid {
+            display: grid;
+            gap: 15px;
+            padding: 40px;
+        }
+
+        .product {
+            background-color: #fff9dd; 
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(212, 175, 55, 0.2); 
+            border: 1px solid #d4af37; 
+            transition: transform 0.3s;
+        }
+
+        .product:hover {
+            transform: scale(1.03);
+        }
+
+        .product img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            border: 2px solid #d4af37;
+        }
+
+        @media (max-width: 599px) {
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (min-width: 600px) and (max-width: 899px) {
+            .product-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (min-width: 900px) {
+            .product-grid {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+
+        p {
+            text-align: center;
+            font-size: 22px;
+            font-weight: bold;
+            margin-top: 10px;
+            color:rgba(158, 138, 21, 0.725);
+            text-decoration: underline;
+            
+        }
+        h1{
+            text-align: center;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><u> ROLEX</u> ♛</h1>
+    <div class="product-grid">
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/49/8e/f3/498ef3252f767df78048c5eb3f8db044.jpg" alt="Product 1">
+            <p>Product 1</p>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/bf/6c/01/bf6c0111fdecfa055de27becd3425ae5.jpg" alt="Product 2">
+            <p>Product 2</p>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/63/a5/64/63a564924b02dece156b414333e54a1e.jpg" alt="Product 3">
+            <p>Product 3</p>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/2a/e9/c0/2ae9c00e63fa87ecd2c2b2a35ed99b5d.jpg" alt="Product 4">
+            <p>Product 4</p>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/bc/87/96/bc879618970f5489fa3bd69d02d0616f.jpg" alt="Product 5">
+            <p>Product 5</p>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/5e/9e/50/5e9e50bdb7205d251477973b361fb236.jpg" alt="Product 6">
+            <p>Product 6</p>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/0d/f4/47/0df4474ed7be73ac00efceff4bf95d0e.jpg" alt="Product 7">
+            <p>Product 7</p>
+        </div>
+        <div class="product">
+            <img src="https://i.pinimg.com/736x/8a/77/85/8a77850565ba36363084c9cafaf39d0f.jpg" alt="Product 8">
+            <p>Product 8</p>
+        </div>
+    </div>
+</body>
+
+</html>

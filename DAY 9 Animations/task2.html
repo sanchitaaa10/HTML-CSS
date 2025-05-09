@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest Style Gallery</title>
+    <style>
+        body {
+            background-color: rgba(128, 128, 128, 0.76);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery {
+            column-count: 1;
+            column-gap: 15px;
+            padding: 20px;
+        }
+
+        @media (min-width: 600px) {
+            .gallery {
+                column-count: 2;
+            }
+        }
+
+        @media (min-width: 900px) {
+            .gallery {
+                column-count: 4;
+            }
+        }
+
+        .gallery img {
+            width: 100%;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            display: block;
+            break-inside: avoid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="gallery"> 
+        <img src="https://i.pinimg.com/736x/b1/9e/a6/b19ea65911c66edcad0e24d650472d6a.jpg" alt="Image 1">
+        <img src="https://i.pinimg.com/736x/69/c4/30/69c43015962c8bbbc6d884be310d3ede.jpg" alt="Image 2">
+        <img src="https://i.pinimg.com/736x/aa/71/ea/aa71ea557488b77a132e611a2995239b.jpg" alt="Image 3">
+        <img src="https://i.pinimg.com/736x/da/97/5d/da975d71539c035ac0261b015228ba0d.jpg" alt="Image 4">
+        <img src="https://i.pinimg.com/736x/d2/7d/5a/d27d5a89966902257635ab1f56656651.jpg" alt="Image 5">
+        <img src="https://i.pinimg.com/736x/2d/11/72/2d117223922f73e61674a27c1b342daa.jpg" alt="Image 6">
+        <img src="https://i.pinimg.com/736x/0b/d9/1c/0bd91caf4b63923bf6473c0055247c7c.jpg" alt="Image 7">
+        <img src="https://i.pinimg.com/736x/bc/79/90/bc799097a1c43d2e86f9d781d6a69637.jpg" alt="Image 8">
+    </div>
+</body>
+
+</html>
