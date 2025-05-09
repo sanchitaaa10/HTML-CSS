@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-4 Powerful Style</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f0f0f;
+            color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            color: #00ffff;
+            background-color: #1a1a1a;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        section {
+            padding: 30px;
+            margin: 20px;
+            border: 2px solid #333;
+            border-radius: 12px;
+            background-color: #1e1e1e;
+            box-shadow: 0 4px 12px rgba(0, 255, 255, 0.2);
+        }
+
+        /* Exercise 1 */
+        .card {
+            background-color: #2a2a2a;
+            padding: 20px;
+            border-radius: 10px;
+            width: 320px;
+            margin: 20px auto;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+        }
+
+        #name {
+            color: #00ffff;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .bio {
+            font-style: italic;
+            color: #ccc;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: #ff007f;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #00ff88;
+        }
+
+        /* Exercise 2 */
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav a {
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #2c2c2c;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #00ffff;
+            color: #000;
+        }
+
+        nav li:first-child a {
+            background-color: #ff007f;
+            color: white;
+        }
+
+        /* Exercise 3 */
+        input {
+            border: 1px solid #666;
+            padding: 10px;
+            margin-bottom: 15px;
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            background-color: #121212;
+            color: #fff;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        input:focus {
+            border-color: #00ffff;
+            outline: none;
+        }
+
+        input[type="email"] {
+            border-color: orange;
+        }
+
+        button {
+            background-color: #00cc66;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+
+        button:hover {
+            background-color: #00ff88;
+            transform: scale(1.05);
+        }
+
+        /* Exercise 4 */
+        h3::before {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #ff007f;
+            margin-bottom: 8px;
+        }
+
+        p::first-line {
+            text-transform: capitalize;
+        }
+
+        p::before {
+            content: '* ';
+            color: #00ffff;
+        }
+
+        /* Exercise 5 */
+        .blog h3 {
+            font-weight: bold;
+            color: #ff007f;
+        }
+
+        .blog article:nth-child(2) {
+            background-color: #292929;
+            padding: 15px;
+            border-left: 5px solid #00ffff;
+        }
+
+        .blog article:nth-child(2) p {
+            color: #00ff88;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>✅ CSS Selectors Exercises</h1>
+
+    <section>
+        <h2>Exercise 1: Style a Simple Profile Card</h2>
+        <div class="card">
+            <h2 id="name">Alex Johnson</h2>
+            <p class="bio">Front-end Developer from New York</p>
+            <a href="#">View Profile</a>
+        </div>
+    </section>
+
+    <section style="background-color: #141414;">
+        <h2>Exercise 2: Navigation Menu Styling</h2>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section>
+        <h2>Exercise 3: Form Field Focus</h2>
+        <form>
+            <label>Email:</label>
+            <input type="email" />
+
+            <label>Password:</label>
+            <input type="password" />
+
+            <button>Login</button>
+        </form>
+    </section>
+
+    <section style="background-color: #141414;">
+        <h2>Exercise 4: Use Pseudo-elements</h2>
+        <article>
+            <h3>Breaking News</h3>
+            <p>India air strikes on pakistan and destroyed 9 terrorist headquarters🫡</p>
+        </article>
+    </section>
+
+    <section>
+        <h2>Exercise 5: Advanced Targeting</h2>
+        <section class="blog" style="background-color: #1a1a1a;">
+            <h2>Blog Posts</h2>
+            <article>
+                <h3>Post One</h3>
+                <p>Text of post one.</p>
+            </article>
+            <article>
+                <h3>Post Two</h3>
+                <p>Text of post two.</p>
+            </article>
+        </section>
+    </section>
+</body>
+
+</html>

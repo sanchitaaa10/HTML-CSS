@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-1</title>
+    <style>
+        body {
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(rgb(0, 0, 0));
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: aliceblue;
+        }
+
+        p {
+            font-family: serif;
+            text-align: left;
+            padding-left: 40px;
+            font-size: 20px;
+        }
+
+        ol {
+            font-family: serif;
+            text-align: left;
+            padding-left: 40px;
+            font-size: 20px;
+
+        }
+
+        ul {
+            font-family: serif;
+            text-align: left;
+            padding-left: 40px;
+            font-size: 20px;
+
+        }
+
+        th{
+            padding: 30px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        tr,td{
+            padding:30px;
+            font-family: serif;
+        }
+
+        details {
+            margin: 15px auto;
+            padding: 15px;
+            width: 95%;
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+
+        }
+
+        summary {
+            font-size: 20px;
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            padding-left: 40px;
+            text-align: left;
+
+        }
+
+        summary::before {
+            content: '▶';
+            position: absolute;
+            left: 0;
+            transition: transform 0.3s ease;
+        }
+
+        details[open] summary::before {
+            transform: rotate(90deg);
+        }
+
+        p {
+            margin: 10px 0;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Student Dev Handbook📚</h1>
+    <details name="notes">
+        <summary>What is HTML?🤔</summary>
+        <p>
+        <ol>
+            <li>HTML stands for HyperText Markup Language.</li>
+            <li>It is the standard markup language used to structure and create web pages.</li>
+            <li>HTML consists of a series of elements (tags) that define how content like text, images, videos, and
+                links are displayed on a webpage.</li>
+            <li>These tags provide instructions to web browsers on how to render the content visually.</li>
+        </ol>
+
+        </p>
+    </details>
+
+
+
+    <details name="notes">
+        <summary>What is semantic tags?🏷️</summary>
+        <p>
+        <ol>
+            <li>Using semantic elements improves the structure of your web pages, making them more understandable for
+                both people and machines (like search engines and screen readers)</li>
+            <li>Semantic tag like &lt;article&gt;,&lt;section&gt;,&lt;header&gt; and &lt;footer&gt; convey meaning and
+                structure to your content
+            </li>
+            </p>
+    </details>
+
+
+
+
+    <details name="notes">
+        <summary>Difference between id and class±</summary>
+        <p>
+        <ul>
+            <h3 style="text-align: left;">🔹 id:</h3>
+            <li>Used to uniquely identify a single HTML element.</li>
+            <li>Must be unique within a page (only one element can have a specific id).</li>
+            <li>Selected in CSS using #idName.</li>
+            <li>Commonly used for JavaScript targeting: document.getElementById("idName").</li>
+            <li>Has higher specificity in CSS.</li>
+            <li>Generally used for individual, one-off elements (e.g., a header, a specific button).</li>
+
+
+            <h3 style="text-align: left;">🔹 class:</h3>
+            <li>Used to define a group of elements with common styling or behavior.</li>
+            <li>Can be reused across multiple elements.</li>
+            <li>Selected in CSS using .className.</li>
+            <li>Accessed in JavaScript with document.getElementsByClassName() or querySelectorAll().</li>
+            <li>Has lower specificity than id in CSS.</li>
+            <li>Suitable for applying the same style or behavior to multiple elements.</li>
+
+        </ul>
+
+        </p>
+
+
+
+    </details>
+
+
+
+
+
+
+
+
+    <details name="notes">
+        <summary>What is a &lt;summary&gt; elememt?📚</summary>
+        <p>The &lt;summary&gt; element in HTML is used as a summary, heading, or label for the &lt;details&gt; element.
+            It acts like a clickable toggle that shows or hides additional content.
+        
+            <ol>
+            <h4 style="text-align: left;">🔹 Key Points:</h4>
+            <li>&lt;summary&gt; must be the first child of a &lt;details&gt; element.</li>
+            <li>When clicked, it toggles the visibility of the content inside the &lt;details&gt;.</li>
+            <li>Useful for collapsible sections like FAQs, disclosures, or expandable info.</li>
+            </ol>
+        </p>
+    </details>
+
+
+    <details name="notes">
+        <summary>What is CSS?🎨</summary>
+        <p>
+            <ul>
+                <li>CSS stands for Cascading Style Sheets.</li>
+                <li>It is a language used to describe the style and layout of HTML documents.</li> 
+                </ul>
+
+                <ol>
+                <h3 style="text-align: left;">🔹 Key Points about CSS:</h3>
+                <li>Controls the look and feel of a webpage (e.g., colors, fonts, spacing, positioning).</li>
+                <li>Keeps content (HTML) and presentation (CSS) separate for better organization and reusability.</li>
+            </ol>
+
+            <h3 style="text-align: left; font-family: serif; padding-left: 40px; font-size: 20px;">🔹 Three types of CSS:</h3>
+
+            <table border="" style="margin-left: 20px; text-align: left;">
+                <tr>
+                  <th>Type of CSS</th>
+                  <th>Where it's applied</th>
+                  <th>Usage</th>
+                
+                </tr>
+                <tr>
+                <th>Inline CSS</th>
+                  <td>Directly on the HTML element (style attribute)</td>
+                  <td>Small adjustments to individual elements</td>
+            
+                
+                </tr>
+                <tr>
+                    <th>Internal CSS</th>
+                  <td>Inside the &lt;style&gt; tag in the &lt:head&gt;</td>
+                  <td>Styling for the current page only</td>
+                  
+                  
+                </tr>
+                <tr>
+                    <th>External CSS</th>
+                    <td>In a separate .css file, linked via &lt;link&gt;</td>
+                    <td>Global styling for multiple pages</td>
+                    
+
+                  </tr>
+              </table>
+
+
+
+        </p>
+    </details>
+    <footer>
+        <p style=" color: antiquewhite ;font-size: x-large; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center;"><i>© 2025  ITM Skills University | All rights reserved</i></p>
+      </footer>
+</body>
+
+</html>

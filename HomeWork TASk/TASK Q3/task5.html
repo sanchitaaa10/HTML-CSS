@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-5</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar main";
+            grid-template-columns: 250px 1fr;
+            grid-template-rows: 80px auto;
+            gap: 15px;
+            padding: 10px;
+            height: 100vh;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #e61b1b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #f60c0cca;
+            color: white;
+            padding: 20px;
+            position: fixed;
+            width: 250px;
+            height: 100%;
+        }
+
+        .main {
+            grid-area: main;
+            display: grid;
+            grid-template-areas:
+                "weather news"
+                "calendar news";
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: auto auto;
+            gap: 20px;
+            padding: 20px;
+            margin-left: 50px;
+        }
+
+        .widget {
+            background-color: #d00920dd;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .weather {
+            grid-area: weather;
+        }
+
+        .news {
+            grid-area: news;
+        }
+
+        .calendar {
+            grid-area: calendar;
+        }
+
+        @media (max-width: 799px) {
+            .dashboard {
+                grid-template-areas:
+                    "header"
+                    "main";
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                display: none;
+                /* Hide sidebar on small screens */
+            }
+
+            .main {
+                grid-template-areas:
+                    "weather"
+                    "news"
+                    "calendar";
+                grid-template-columns: 1fr;
+                margin-left: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dashboard">
+        <header class="header">Dashboard Header</header>
+
+        <nav class="sidebar"><b>Sidebar Navigation</b></nav>
+        <main class="main">
+            <div class="widget weather">
+                <b>
+                    Weather Widget
+                </b>
+            </div>
+
+            <div class="widget news">
+                <b>
+                    News Feed
+                </b>
+            </div>
+
+            <div class="widget calendar">
+                <b>
+                    Calendar Widget
+                </b>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

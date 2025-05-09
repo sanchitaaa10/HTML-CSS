@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-6</title>
+    <style>
+        body {
+            background-color: rgba(193, 12, 12, 0.911);
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .resume-container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "left-column right-column";
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto auto;
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        .left-column {
+            grid-area: left-column;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .right-column {
+            grid-area: right-column;
+            background-color: white;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 600px) {
+            .resume-container {
+                grid-template-areas:
+                    "header"
+                    "right-column"
+                    "left-column";
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="resume-container">
+        <header class="header">Atharva Gahine💻</header>
+        <section class="left-column">
+            <h2>Skills</h2>
+            <p>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JAVASCRIPT</li>
+                <li>C++</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>MYSQL</li>
+            </ul>
+            </p>
+
+            <h2>Experience</h2>
+            <p>
+            <ul>
+                <li>Currently i'm a fresher</li>
+            </ul>
+            </p>
+
+            <h2>Education</h2>
+            <p>I'm pursuing a B.Tech(Bachelor of Technology) in Computer
+                Science and Engineering at ITM Skills University.</p>
+        </section>
+        <section class="right-column">
+            <img src="https://media-bom1-1.cdn.whatsapp.net/v/t61.24694-24/491840155_1030092605847213_8566781990044611556_n.jpg?ccb=11-4&oh=01_Q5Aa1QGbRoHHJpwcVPXyImA8mzhKNkMsGv4jwkJwbuRPoU0M4A&oe=6829AD94&_nc_sid=5e03e0&_nc_cat=102" alt="Profile Picture" class="profile-pic">
+            <h2>Contact Details</h2>
+            <p>Email: 2024.atharvag@isu.ac.in</p>
+            <p>Phone: +91 7972052561</p>
+        </section>
+    </div>
+</body>
+
+</html>

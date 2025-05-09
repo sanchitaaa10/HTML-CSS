@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-2</title>
+    <style>
+        body {
+            background-color: #1e1e2f;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            padding: 30px;
+            margin: 10px;
+            border: 2px solid #444;
+            border-radius: 10px;
+            background-color: #2c2c3d;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2 {
+            color: #ffcc70;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px 15px;
+            transition: background 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+            border-radius: 5px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50vh;
+            background-color: #44475a;
+            border-radius: 10px;
+        }
+
+        .box {
+            width: 250px;
+            height: 250px;
+            background-color: #00ff22;
+            border-radius: 12px;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .card {
+            flex: 1 1 250px;
+            background-color: #333;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            color: white;
+            border-radius: 10px;
+        }
+
+        .columns {
+            display: flex;
+            gap: 10px;
+        }
+
+        .column {
+            flex: 1;
+            background-color: #444;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .layout {
+            display: flex;
+            gap: 10px;
+        }
+
+        .sidebar {
+            flex: 1;
+            background-color: #555;
+            padding: 20px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .main-content {
+            flex: 3;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .button-row {
+            display: flex;
+            gap: 10px;
+        }
+
+        .button-row button {
+            padding: 10px 15px;
+            background-color: #ffb347;
+            border: none;
+            border-radius: 6px;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .button-row button:last-child {
+            margin-left: auto;
+            background-color: #ffa500;
+        }
+
+        .vertical-nav {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .vertical-nav a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px;
+            background-color: #444;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+
+        .vertical-nav a:hover {
+            background-color: #666;
+        }
+
+        .order-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .order-container div {
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .order-container .second {
+            order: 1;
+        }
+
+        .order-container .first {
+            order: 2;
+        }
+
+        .grow-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .grow-container div {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+            border-radius: 10px;
+        }
+
+        .grow-container .grow-more {
+            flex-grow: 2;
+            background-color: #ed1a06;
+        }
+
+        .profile {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .profile img {
+            flex: 1 1 150px;
+            max-width: 250px;
+            border-radius: 50%;
+            border: 4px solid #ffcc70;
+        }
+
+        .profile-info {
+            flex: 2 1 300px;
+        }
+
+        .profile-info h2 {
+            color: #ffcc70;
+        }
+
+        .profile-info p {
+            font-size: 18px;
+            color: #d3d3d3;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Flexbox Practice Set</h1>
+
+    <section>
+        <h2> Exercise 1: Horizontal Navigation Bar</h2>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </section>
+
+    <section>
+        <h2> Exercise 2: Center a Box</h2>
+        <div class="container">
+            <div class="box"></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Exercise 3: Responsive Card Row</h2>
+        <div class="card-container">
+            <div class="card">Card 1</div>
+            <div class="card">Card 2</div>
+            <div class="card">Card 3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2> Exercise 4: Equal Height Columns</h2>
+        <div class="columns">
+            <div class="column">Column-1 </div>
+            <div class="column">Column-2</div>
+            <div class="column">Column-3 with more content</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Exercise 5: Sidebar + Main Content</h2>
+        <div class="layout">
+            <div class="sidebar">Sidebar</div>
+            <div class="main-content">Main Content</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Exercise 6: Button Row with Right Aligned Button</h2>
+        <div class="button-row">
+            <button>Button 1</button>
+            <button>Button 2</button>
+            <button>Button 3</button>
+            <button>Button 4</button>
+        </div>
+    </section>
+
+    <section>
+        <h2>Exercise 7: Vertical Flexbox Navigation</h2>
+        <nav class="vertical-nav">
+            <a href="https://www.instagram.com/gahine11_/">Instagram</a>
+            <a href="https://www.linkedin.com/in/">LinkedIn</a>
+            <a href="">Twitter</a>
+        </nav>
+    </section>
+
+    <section>
+        <h2>Exercise 8: Flex Order Change</h2>
+        <div class="order-container">
+            <div class="first">First</div>
+            <div class="second">Second</div>
+            <div class="third">Third</div>
+        </div>
+    </section>
+
+    <section>
+        <h2> Exercise 9: Grow One Box More Than Others</h2>
+        <div class="grow-container">
+            <div>Box 1</div>
+            <div class="grow-more">Box 2 (Grows More)</div>
+            <div>Box 3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2> Exercise 10: Profile Layout</h2>
+        <div class="profile">
+            <img src="https://media-bom1-1.cdn.whatsapp.net/v/t61.24694-24/491840155_1030092605847213_8566781990044611556_n.jpg?ccb=11-4&oh=01_Q5Aa1QGbRoHHJpwcVPXyImA8mzhKNkMsGv4jwkJwbuRPoU0M4A&oe=6829AD94&_nc_sid=5e03e0&_nc_cat=102">
+            <div class="profile-info">
+                <h2>Gahine Bhau❤️‍🔥😎</h2>
+                <p>My name is Atharva Gahine, and I am currently pursuing a B.Tech in Computer Science and Engineering from ITM Skills University. I have a strong passion for creativity and technology, which I express through various interests and activities. I am an active member of the Fun Club at my university, where I participate in organizing engaging events and collaborating with enthusiastic peers to create joyful experiences.In addition, I have a deep interest in web development. I enjoy designing and building websites that are not only functional but also visually appealing. Creating digital experiences that are both user-friendly and innovative gives me immense satisfaction. I constantly seek to grow in both creative and technical domains, and I aspire to use my skills to make a meaningful impact in the world of technology and media.
+
+                </p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

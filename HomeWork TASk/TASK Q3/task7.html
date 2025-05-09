@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK-7</title>
+    <style>
+        body {
+            background-color: #60aa8d;
+            margin: 0;
+            font-family: Arial, sans-serif;
+
+        }
+
+        .menu-container {
+            display: grid;
+            grid-template-areas:
+                "header header header"
+                "starters mains desserts";
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 28px;
+            font-weight: bold;
+            border-radius: 8px;
+        }
+
+        .menu-section {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .starters {
+            grid-area: starters;
+        }
+
+        .mains {
+            grid-area: mains;
+        }
+
+        .desserts {
+            grid-area: desserts;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        @media (max-width: 600px) {
+            .menu-container {
+                grid-template-areas:
+                    "header"
+                    "starters"
+                    "mains"
+                    "desserts";
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu-container">
+        <header class="header">Brother's Resturant - Menu</header>
+        <section class="menu-section starters">
+            <h2>Starters</h2>
+            <p>Paneer Sticks - ₹150</p>
+            <p>Chicken Nuggets - ₹100</p>
+            <p>Paneer Crispy - ₹210</p>
+        </section>
+        <section class="menu-section mains">
+            <h2>Dishes</h2>
+            <p>Butter Chicken - ₹300</p>
+            <p>Paneer Khurchan - ₹400</p>
+            <p>Butter Paneer - ₹200</p>
+        </section>
+        <section class="menu-section desserts">
+            <h2>Desserts</h2>
+            <p>Chocolate IceCream - ₹50</p>
+            <p>Dark Chocolate Pastry - ₹80</p>
+            <p>Chocolate Brownie - ₹80</p>
+        </section>
+    </div>
+</body>
+
+</html>
